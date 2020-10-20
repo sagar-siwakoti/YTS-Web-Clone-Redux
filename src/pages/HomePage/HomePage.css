@@ -24,15 +24,40 @@
   grid-row-gap: 2rem;
   padding: 0 9rem 6rem;
 }
-.homepage__popular  a {
+.homepage__popular a {
   color: #428bca;
   text-decoration: none;
   font-weight: 700;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   display: inline-block;
   justify-self: center;
 }
 
 .homepage__popular a:hover {
   color: #2a6496;
+}
+
+.homepage__popular > p {
+
+  color: var(--color-gray);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.homepage__popularHeader{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #C0C3C2;
+}
+.homepage__popularHeader > h3{
+  color: var(--color-light);
+  display: flex;
+  align-items: center;
+}
+.homepage__popularHeader h3 img{
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin-right: 1rem;
 }
