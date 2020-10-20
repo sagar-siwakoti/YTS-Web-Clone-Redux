@@ -33,6 +33,7 @@ function HomePage(props) {
           </Link>
         </div>
       </div>
+      <h1>Updating</h1>
     </div>
   );
 }
