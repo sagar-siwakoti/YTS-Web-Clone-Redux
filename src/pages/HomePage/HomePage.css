@@ -38,26 +38,37 @@
 }
 
 .homepage__popular > p {
-
   color: var(--color-gray);
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
 }
-.homepage__popularHeader{
+.homepage__popularHeader {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 2rem 0;
-  border-bottom: 1px solid #C0C3C2;
+
+  border-bottom: 1px solid #c0c3c2;
 }
-.homepage__popularHeader > h3{
+.homepage__popularHeader > h3 {
   color: var(--color-light);
   display: flex;
   align-items: center;
 }
-.homepage__popularHeader h3 img{
+.homepage__popularHeader h3 img {
   width: 2rem;
   height: 2rem;
   display: block;
   margin-right: 1rem;
+}
+.homepage__popularHeader a img {
+  display: block;
+  margin-right: 1rem;
+}
+.homepage__popularLink:link,
+.homepage__popularLink:visited {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
