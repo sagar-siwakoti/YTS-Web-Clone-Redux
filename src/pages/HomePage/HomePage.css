@@ -1,0 +1,10 @@
+.homepage{
+    position: relative;
+}
+.homepage__heading{
+    color: var(--color-dark);
+    text-align: center;
+    font-weight: 700;
+    font-size: 4.5rem;
+    padding: 4rem 0 0;
+}
