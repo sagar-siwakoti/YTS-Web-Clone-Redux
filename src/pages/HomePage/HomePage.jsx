@@ -32,6 +32,9 @@ function HomePage(props) {
             <p>more...</p>
           </Link>
         </div>
+        <div>
+
+        </div>
       </div>
 
       <h1>Updating</h1>
