@@ -6,7 +6,7 @@
   text-align: center;
   font-weight: 700;
   padding: 4rem 0 0;
-  font-size: 2.76em;
+  font-size: 2.75em;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 .homepage__popular {
@@ -56,14 +56,14 @@
   align-items: center;
 }
 .homepage__popularHeader h3 img {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2rem;
+  height: 2rem;
   display: block;
   margin-right: 1rem;
 }
 .homepage__popularHeader a img {
   display: block;
-  margin-right: 1.01em;
+  margin-right: 1em;
 }
 .homepage__popularLink:link,
 .homepage__popularLink:visited {
