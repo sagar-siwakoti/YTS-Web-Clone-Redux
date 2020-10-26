@@ -3,6 +3,7 @@ import "./HomePage.css";
 import { Link } from "react-router-dom";
 import { star } from "../../assets/images";
 import { wifi } from "../../assets/images";
+import Popular from "../../components/Homepage/Popular/Popular";
 
 function HomePage(props) {
   return (
@@ -21,7 +22,7 @@ function HomePage(props) {
           IMPORTANT - YTS.MX is the only new official domain for YIFY Movies
         </Link>
         <div className="homepage__popularHeader">
-          <div className="just-for-space"/>
+          <div className="just-for-space" />
           <h3>
             <img src={star} alt="star" />
             <span>Popular Downloads</span>
@@ -33,11 +34,9 @@ function HomePage(props) {
           </Link>
         </div>
         <div>
-
+          <Popular />
         </div>
       </div>
-
-      <h1>Updating</h1>
     </div>
   );
 }
