@@ -17,16 +17,23 @@ function Header(props) {
             <Link to="/">
                 <img src={logo} alt="Logo"/>
             </Link>
+            <div className="header__typo">
+                <span>HD movies at the smallest file size.</span>
+            </div>
             <div className="header__nav">
+
                 <div className="header__navSearch">
                     <input value={movie} onChange={changeHandler} type="text" placeholder="Quick Search"/>
                     <img src={search} onClick={submitHandler} alt="search" className="header__navSearchImg"/>
                 </div>
+
                 <div className="header__navContainer">
                     <Link to="/" className="header__link">Home</Link>
                     <Link to="/" className="header__link">4k</Link>
                     <Link to="/" className="header__link">Trending</Link>
                     <Link to="/" className="header__link">Browse Movies</Link>
+                    <Link to="/" className="header__link">Suggestions</Link>
+                    <Link to="/" className="header__link">Bookmarks</Link>
                 </div>
             </div>
 
