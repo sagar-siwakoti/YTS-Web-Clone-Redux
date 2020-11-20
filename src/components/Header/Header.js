@@ -23,13 +23,13 @@ function Header(props) {
             <div className="header__nav">
 
                 <div className="header__navSearch">
-                    <input value={movie} onChange={changeHandler} type="text" placeholder="Quick Search"/>
                     <img src={search} onClick={submitHandler} alt="search" className="header__navSearchImg"/>
+                    <input value={movie} onChange={changeHandler} type="text" placeholder="Quick Search"/>
                 </div>
 
                 <div className="header__navContainer">
                     <Link to="/" className="header__link">Home</Link>
-                    <Link to="/" className="header__link">4k</Link>
+                    <Link to="/" className="header__link">4K</Link>
                     <Link to="/" className="header__link">Trending</Link>
                     <Link to="/" className="header__link">Browse Movies</Link>
                     <Link to="/" className="header__link">Suggestions</Link>
