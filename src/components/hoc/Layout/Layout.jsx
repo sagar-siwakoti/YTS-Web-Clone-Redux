@@ -1,10 +1,12 @@
 import React from 'react';
 
 import "./Layout.css";
-function Layout(props) {
+import Header from "../../Header/Header";
+function Layout({children}) {
     return (
         <div className="layout">
-
+            <Header/>
+            {children}
         </div>
     );
 }
