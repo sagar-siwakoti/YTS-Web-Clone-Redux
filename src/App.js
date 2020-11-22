@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Header from "./components/Header/Header";
 import Layout from "./components/hoc/Layout/Layout";
 
 function App() {

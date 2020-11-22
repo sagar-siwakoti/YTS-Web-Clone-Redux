@@ -29,7 +29,7 @@ margin-right: -25px;
 }
 .header__navSearch input{
   display: block;
-  width: 250px;
+  width: 215px;
   height: 35px;
 font-weight: bolder;
   background-color: transparent;
@@ -66,7 +66,6 @@ font-weight: bolder;
 .header__typo {
   font-size: 1.2em;
   align-items: center;
-  margin-left: 2%;
   margin-top: 7px;
   float: left !important;
   color: #919191;
