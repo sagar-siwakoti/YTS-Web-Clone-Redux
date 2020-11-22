@@ -12,7 +12,7 @@ function Layout({children}) {
     return (
         <div className="layout">
             <Header show={showSidebar} hanldeSidebar={toggleSidebar}/>
-            <Sidebar show={showSidebar} handleSidebar={toggleSidebar} />
+            {/*<Sidebar show={showSidebar} handleSidebar={toggleSidebar} />*/}
             {children}
         </div>
     );
