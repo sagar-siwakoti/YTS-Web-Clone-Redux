@@ -1,0 +1,30 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 100vh;
+    background-color: var(--color-dark);
+    z-index: 5000;
+    transition: .4s;
+}
+
+.sidebar__img {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid gray;
+    padding: 2rem 1rem;
+}
+
+.sidebar__navContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar__navContainer a:link,a:visited {
+    color: var(--color-light);
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 1px solid #5a5353;
+    width: 100%;
+}
