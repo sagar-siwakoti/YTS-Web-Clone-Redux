@@ -7,7 +7,7 @@
     height: 100vh;
     background-color: var(--color-dark);
     z-index: 5000;
-    transition: .4s;
+    transition: .41s;
 }
 
 .sidebar__img {
