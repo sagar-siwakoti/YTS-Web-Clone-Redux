@@ -1,0 +1,9 @@
+.popular {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    grid-column-gap: 8rem;
+}
+
+.popular > div {
+    margin-bottom: 4rem;
+}
