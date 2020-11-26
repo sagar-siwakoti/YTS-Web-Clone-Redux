@@ -1,6 +1,6 @@
 import React from "react";
 import { star } from "../../assets/images";
-import Button from "@material-ui/core/Button";
+import Button from '@material-ui/core/Button';
 import "./Movie.css"
 function Movie(props) {
   /*const nextPage = () => {

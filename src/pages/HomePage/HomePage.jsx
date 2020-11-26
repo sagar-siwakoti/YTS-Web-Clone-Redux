@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
-import { star } from "../../assets/images";
-import { wifi } from "../../assets/images";
+import { star,wifi } from "../../assets/images";
 import Popular from "../../components/Homepage/Popular/Popular";
+import {connect} from "react-redux";
+import {getAllMovies} from '../../store/actions/getAllMovies';
 
 function HomePage(props) {
+  const [showModal,setShowModal]=useState(false);
+  useEffect(()=>{
+    window.document.title="YTS Clone";
+    if (props.allMovies.movies.length===0){
+      props.getMovies()
+    }
+  },[])
   return (
     <div className="homepage">
       <div className="homepage__popular">
@@ -40,5 +48,16 @@ function HomePage(props) {
     </div>
   );
 }
+const mapStateToProps=(state)=>{
+  return{
+    allMovies:state.allMovies,
+  }
+}
+const mapDispatchToProps = dispatch => {
+  return {
+    getMovies: () => dispatch(getAllMovies()),
+    resetError: () => dispatch({type: 'GET_MOVIES_ERROR',value: null})
+  }
+}
 
-export default HomePage;
+export default connect(mapStateToProps,mapDispatchToProps)(HomePage);
