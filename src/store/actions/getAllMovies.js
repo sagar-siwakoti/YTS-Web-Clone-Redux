@@ -1,4 +1,4 @@
-import * as actions from "./actions";
+import * as actions from "./actionsTypes";
 import { ytsInstance as axios } from "../../axios";
 
 export const getAllMovies = () => {
