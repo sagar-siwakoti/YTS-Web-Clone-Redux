@@ -12,6 +12,9 @@ function Movie(props) {
     props.getMovieDetail(props.movie.id);
     props.history.push("/result");
   };
+  function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  }
   return (
     <>
       <div className="movie" onClick={detailPage}>
@@ -24,7 +27,7 @@ function Movie(props) {
             <Button clicked={detailPage}>View Details</Button>
           </div>
         </div>
-        <h3>{props.movie?.title}</h3>
+        <h3>{truncate(props.movie?.title,27)}</h3>
         <p>{props.movie?.year}</p>
       </div>
     </>

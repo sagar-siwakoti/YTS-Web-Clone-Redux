@@ -22,7 +22,7 @@
   display: grid;
   grid-template-rows: repeat(4, min-content);
   grid-row-gap: 2rem;
-  padding: 0 9rem 6rem;
+  padding: 0 10rem 6rem;
 }
 .homepage__popular a {
   color: #428bca;
