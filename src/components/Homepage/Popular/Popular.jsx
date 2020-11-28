@@ -11,13 +11,14 @@ function Popular(props) {
     });
   }
 
-  return <div>
-      (
+  return(
+    <div>
+
       <div className="popular">
           {displayMovies}
       </div>
-      )
-  </div>;
+
+  </div>);
 }
 const mapStateToProps = (state) => {
     return {

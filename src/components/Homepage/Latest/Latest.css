@@ -11,7 +11,7 @@
 .latest__container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
-    grid-gap: 8rem;
+    grid-gap: 6rem;
 }
 .latest__link:link,.latest__link:visited{
     text-decoration: none;
