@@ -7,6 +7,7 @@ import {connect} from "react-redux";
 import {getAllMovies} from '../../store/actions/getAllMovies';
 import Latest from "../../components/Homepage/Latest/Latest";
 import Upcoming from "../../components/Homepage/Upcoming/Upcoming";
+import Footer from "../../components/Footer/Footer";
 
 function HomePage(props) {
   const [showModal,setShowModal]=useState(false);
@@ -48,10 +49,13 @@ function HomePage(props) {
         </div>
       </div>
       <div className="homepage__latest">
-        <Latest/>
+        <Latest />
       </div>
       <div className="homepage__upcoming">
-        <Upcoming/>
+        <Upcoming />
+      </div>
+      <div className="homepage__footer">
+        <Footer />
       </div>
     </div>
   );

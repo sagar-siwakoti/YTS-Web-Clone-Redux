@@ -72,17 +72,15 @@
   align-items: center;
   text-decoration: none;
 }
-.homepage__latest {
+.homepage__latest,
+.homepage__footer {
   background-color: #171717;
   padding: 3rem 15rem;
-
 }
-.homepage__upcoming{
+.homepage__upcoming {
   /* height: 120vh; */
   background-color: #1d1d1d;
   padding: 3rem 15rem;
-
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -93,7 +91,7 @@
     display: none;
   }
 
-  .homepage__popular  a {
+  .homepage__popular a {
     display: none;
   }
 }
@@ -108,6 +106,9 @@
   }
 
   .homepage__upcoming {
+    padding: 4rem 2rem;
+  }
+  .homepage__footer {
     padding: 4rem 2rem;
   }
 }

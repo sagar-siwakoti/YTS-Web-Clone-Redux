@@ -1,0 +1,13 @@
+.footer {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
