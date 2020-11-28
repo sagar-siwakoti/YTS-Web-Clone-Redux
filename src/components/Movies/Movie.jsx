@@ -1,7 +1,7 @@
 import React from "react";
 import "./Movie.css";
 import { star } from "../../assets/images";
-import movieImg from "../../assets/extraction.jpg";
+import movieImg from "../../assets/theOldGuard.jpg";
 import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";

@@ -1,13 +1,83 @@
-.Loader {
-    width: 100vw;
-    height: 80vh;
-    background-color: #171717;
-    position: relative;
-}
-.Loader div {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.movieDetails__container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-column-gap: 8rem;
+  padding: 4rem 9rem;
+  /* background-image: linear-gradient(to bottom,
+        rgba(43, 40, 40, 0.822),
+        rgba(36, 29, 29, 0.897)),
+        url(../../assets/images/hero.jpg); */
+  /* filter: blur(10px); */
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-items: start;
 }
 
+.movieDetails__container > div {
+  /* background-color: coral; */
+  height: 40rem;
+  width: 100%;
+}
+.movieDetails__image button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.movieDetails__image div {
+  height: 90%;
+}
+
+.movieDetails__details {
+  color: var(--color-light);
+}
+
+.movieDetails__details > * {
+  margin-bottom: 2rem;
+}
+
+.movieDetails__availability {
+  display: flex;
+  align-items: flex-start;
+}
+
+.movieDetails__availability p {
+  margin-right: 2rem;
+}
+.movieDetails__availabilityContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.movieDetails__star {
+  display: flex;
+  align-items: center;
+}
+
+.movieDetails__star img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.movieDetails__likes {
+  display: grid;
+  width: 10rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+  align-items: center;
+}
+
+.Loader {
+  width: 100vw;
+  height: 80vh;
+  background-color: #171717;
+  position: relative;
+}
+.Loader div {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

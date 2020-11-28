@@ -1,6 +1,6 @@
 import React from 'react'
 import './MovieOutside.css';
-import {extraction} from "../../../assets/images"
+import {theOldGuard} from "../../../assets/images"
 import { connect } from 'react-redux';
 
 import { withRouter } from 'react-router-dom';
@@ -14,7 +14,7 @@ function MovieTertiary(props) {
     }
     return (
         <div className={classes.movieTertiary} onClick={nextpage}>
-            <img src={ props.img ||extraction} alt="movie"/>
+            <img src={ props.img ||theOldGuard} alt="movie"/>
         </div>
     )
 }
