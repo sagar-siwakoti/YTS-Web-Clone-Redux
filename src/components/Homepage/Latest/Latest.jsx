@@ -15,7 +15,7 @@ function Latest(props) {
     }
     return (
         <div className="latest">
-            <div className="latest__headContent">
+            <div className="latest__header">
                 <h3 className="latest__heading">Latest YIFY Movies Torrents</h3>
                 <Link to={"/"} className="latest__link">Browse All</Link>
             </div>

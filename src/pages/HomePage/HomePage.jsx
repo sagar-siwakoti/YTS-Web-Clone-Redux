@@ -46,7 +46,7 @@ function HomePage(props) {
           <Popular />
         </div>
       </div>
-      <div className="homepage_latest">
+      <div className="homepage__latest">
         <Latest/>
       </div>
     </div>
