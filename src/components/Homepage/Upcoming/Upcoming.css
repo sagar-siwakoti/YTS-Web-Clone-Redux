@@ -1,0 +1,24 @@
+.upcoming__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.upcoming__header h3 {
+  color: var(--color-light);
+}
+.upcoming__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 6rem;
+}
+.upcoming__headLink:link,
+.upcoming__headLink:visited {
+  text-decoration: none;
+  color: #919191;
+  font-weight: 700;
+  -webkit-transition: color 0.2s ease-in-out;
+}
+.upcoming__headLink:hover {
+  color: #fff;
+}
