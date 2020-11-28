@@ -72,3 +72,41 @@
   align-items: center;
   text-decoration: none;
 }
+.homepage__latest {
+  background-color: #171717;
+  padding: 4rem 9rem;
+
+}
+.homepage__upcoming {
+  /* height: 120vh; */
+  background-color: #1D1D1D;
+  padding: 4rem 9rem;
+
+}
+
+@media only screen and (max-width: 800px) {
+  .homepage__heading {
+    display: none;
+  }
+  .homepage__popular > p {
+    display: none;
+  }
+
+  .homepage__popular  a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .homepage__popular {
+    padding: 4rem 2rem;
+  }
+
+  .homepage__latest {
+    padding: 4rem 2rem;
+  }
+
+  .homepage__upcoming {
+    padding: 4rem 2rem;
+  }
+}

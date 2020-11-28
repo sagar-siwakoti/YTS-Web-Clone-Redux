@@ -5,6 +5,7 @@ import { star,wifi } from "../../assets/images";
 import Popular from "../../components/Homepage/Popular/Popular";
 import {connect} from "react-redux";
 import {getAllMovies} from '../../store/actions/getAllMovies';
+import Latest from "../../components/Homepage/Latest/Latest";
 
 function HomePage(props) {
   const [showModal,setShowModal]=useState(false);
@@ -44,6 +45,9 @@ function HomePage(props) {
         <div>
           <Popular />
         </div>
+      </div>
+      <div className="homepage_latest">
+        <Latest/>
       </div>
     </div>
   );

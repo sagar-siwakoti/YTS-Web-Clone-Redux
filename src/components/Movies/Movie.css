@@ -1,15 +1,17 @@
 .movie {
 
+
   /*height: 31.5rem;
   height: max-content;
   cursor: pointer;*/
 }
 .movie__container {
+  max-width: 220px;
   border: 5px solid var(--color-light);
   border-radius: 4px;
   transition: 0.3s;
   cursor: pointer;
-  height: 31.5rem;
+  height: 33.5rem;
   position: relative;
 }
 .movie img {
