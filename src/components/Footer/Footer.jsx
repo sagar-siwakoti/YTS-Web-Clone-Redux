@@ -3,7 +3,7 @@ import "./Footer.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import { Link } from "react-router-dom";
+
 function Footer(props) {
   return (
     <div className="footer">
@@ -12,15 +12,15 @@ function Footer(props) {
         <h3>Created By: Sagar Siwakoti</h3>
       </div>
       <div className="footer__icons">
-        <Link to={""}>
+        <a href={"https://github.com/sagar-siwakoti/"} target="_blank">
           <GitHubIcon fontSize="large" />
-        </Link>
-        <Link to={""}>
+        </a>
+        <a href={"https://www.linkedin.com/in/sagar-siwakoti/"} target="_blank">
           <LinkedInIcon fontSize="large" />
-        </Link>
-        <Link to={""}>
+        </a>
+        <a href={"https://www.instagram.com/i__am_sagar/"} target="_blank">
           <InstagramIcon fontSize="large" />
-        </Link>
+        </a>
       </div>
     </div>
   );
