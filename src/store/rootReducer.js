@@ -6,6 +6,7 @@ import searchMovieReducer from "./reducers/searchedMovie";
 const rootReducer = combineReducers({
   allMovies: allMoviesReducer,
   homepage: homePageMoviesReducer,
+  singleMovie: singleMovieReducer,
   searchedMovies: searchMovieReducer,
 });
 export default rootReducer;

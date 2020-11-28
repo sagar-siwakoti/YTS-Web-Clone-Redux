@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./MovieDetails.css";
+import {connect} from "react-redux";
+import Loader from "../../components/Extra UI/Loader/Loader";
 function MovieDetails(props) {
   const [showModal, setShowModal] = useState(false);
   const clickedOnMovie = (url) => {
@@ -9,8 +11,20 @@ function MovieDetails(props) {
   //scroll to top
   window.scrollTo(0, 0);
   let movie =props.selectedMovie.currentMovie;
+    let displayMovieDetails = (<div className='Loader'><Loader /></div>)
+    let genres = movie?.genres;
 
-  return <div></div>;
+    genres = genres.map(item => {
+        return (<span key={item}> {item} /</span>)
+    })
+
+    return <div></div>;
 }
 
-export default MovieDetails;
+const mapStateToProps = state => {
+    return {
+        selectedMovie: state.singleMovie
+    }
+}
+
+export default connect(mapStateToProps)(MovieDetails);

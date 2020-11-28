@@ -1,0 +1,13 @@
+.Loader {
+    width: 100vw;
+    height: 80vh;
+    background-color: #171717;
+    position: relative;
+}
+.Loader div {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+

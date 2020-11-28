@@ -3,18 +3,15 @@ import * as actions from "../actions/actionsTypes";
 const initialState = {
   currentMovie: null,
   loading: false,
-  suggestedMovies: null,
   error: null,
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.GET_SINGLE_MOVIE:
-      let suggested = action.value.suggestedMovie.data.data.movies;
       return {
         ...state,
         currentMovie: { ...action.value.movie.movie },
-        suggestedMovies: [...suggested],
       };
     case actions.GET_SINGLE_MOVIE_START:
       return {
