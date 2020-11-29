@@ -6,19 +6,21 @@ import Loader from "../../components/Extra UI/Loader/Loader";
 import Button from "@material-ui/core/Button";
 import MovieSecondarys from "../../components/Movies/MovieExtras/MovieSecondarys";
 
-function MovieDetails(props) {
+class MovieDetails extends React.Component{
+render() {
+
   const clickedOnMovie = (url) => {
     window.location.href = url;
   };
   //scroll to top
   window.scrollTo(0, 0);
-  let movie = props.selectedMovie.currentMovie;
+  let movie = this.props.selectedMovie.currentMovie;
   let displayMovieDetails = (
     <div className="Loader">
       <Loader />
     </div>
   );
-  if (!props.selectedMovie.loading && movie !== null) {
+  if (!this.props.selectedMovie.loading && movie !== null) {
     // list of genre of selected movie
 
     let genres = movie?.genres;
@@ -28,7 +30,7 @@ function MovieDetails(props) {
     });
 
     displayMovieDetails = (
-      <>
+
         <div className="movieDetails__container">
           <div className="movieDetails__image">
             <MovieSecondarys img={movie.large_cover_image} />
@@ -59,7 +61,7 @@ function MovieDetails(props) {
             </div>
           </div>
         </div>
-      </>
+
     );
   }
   return (
@@ -72,6 +74,7 @@ function MovieDetails(props) {
       {displayMovieDetails}
     </div>
   );
+}
 }
 
 const mapStateToProps = (state) => {

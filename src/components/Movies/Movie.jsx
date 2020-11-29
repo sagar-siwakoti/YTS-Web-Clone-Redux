@@ -4,9 +4,11 @@ import { star } from "../../assets/images";
 import movieImg from "../../assets/theOldGuard.jpg";
 import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
-import { getSingleMovie } from "../../store/actions/getSingleMovie";
+import { withRouter } from 'react-router-dom';
+import { getSingleMovie as action } from "../../store/actions/getSingleMovie";
+
 function Movie(props) {
+
   const detailPage = () => {
     window.document.title = props.movie.title;
     props.getMovieDetail(props.movie.id);
@@ -27,7 +29,7 @@ function Movie(props) {
             <Button onClick={detailPage}>View Details</Button>
           </div>
         </div>
-        <h3>{truncate(props.movie?.title,27)}</h3>
+        <h3>{truncate(props.movie?.title,26)}</h3>
         <p>{props.movie?.year}</p>
       </div>
     </>
@@ -36,7 +38,7 @@ function Movie(props) {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getMovieDetail: (id) => dispatch(getSingleMovie(id)),
+    getMovieDetail: (id) => dispatch(action(id)),
   };
 };
 export default connect(null, mapDispatchToProps)(withRouter(Movie));

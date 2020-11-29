@@ -15,7 +15,7 @@ function HomePage(props) {
     if (props.allMovies.movies.length===0){
       props.getMovies()
     }
-  },[null])
+  },[])
   return (
     <div className="homepage">
       <div className="homepage__popular">
