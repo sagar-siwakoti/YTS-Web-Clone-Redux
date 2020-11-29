@@ -24,7 +24,7 @@ function Movie(props) {
             <img src={star} alt="star" />
             <h2>{props.movie?.rating || 5}/10</h2>
             <h2>{props.movie?.genres[0]|| "Action"}</h2>
-            <Button clicked={detailPage}>View Details</Button>
+            <Button onClick={detailPage}>View Details</Button>
           </div>
         </div>
         <h3>{truncate(props.movie?.title,27)}</h3>

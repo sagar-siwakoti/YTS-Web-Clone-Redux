@@ -5,6 +5,7 @@ import { heart, imdb, star } from "../../assets/images";
 import Loader from "../../components/Extra UI/Loader/Loader";
 import Button from "@material-ui/core/Button";
 import MovieSecondarys from "../../components/Movies/MovieExtras/MovieSecondarys";
+
 function MovieDetails(props) {
   const clickedOnMovie = (url) => {
     window.location.href = url;

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
 import { star,wifi } from "../../assets/images";
@@ -10,13 +10,12 @@ import Upcoming from "../../components/Homepage/Upcoming/Upcoming";
 import Footer from "../../components/Footer/Footer";
 
 function HomePage(props) {
-  const [showModal,setShowModal]=useState(false);
   useEffect(()=>{
     window.document.title="YTS Clone";
     if (props.allMovies.movies.length===0){
       props.getMovies()
     }
-  },[])
+  },[null])
   return (
     <div className="homepage">
       <div className="homepage__popular">
