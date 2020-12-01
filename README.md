@@ -13,4 +13,5 @@
     <img src="https://img.shields.io/badge/Hosting-Firebase_Hosting-black.svg" />
 <p><b>Check out Live DEMO=></b> <a href="https://yts-web-clone.web.app/">HERE</a></p>
 <h3>App preview:</h3>
+<img src="src/assets/app_preview.png" height="250px" alt="App Preview"/>
 </p>
