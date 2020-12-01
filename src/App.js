@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/hoc/Layout/Layout";
 import MovieDetails from "./pages/MovieDetails/MovieDetails";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 
 function App() {
   return (
@@ -20,12 +20,12 @@ function App() {
     </>
   );
 }
-const mapStateToProps = state => {
-    return {
-        all: state.allMovies,
-        single: state.singleMovie,
-        searched: state.searchedMovies
-    }
-}
+const mapStateToProps = (state) => {
+  return {
+    all: state.allMovies,
+    single: state.singleMovie,
+    searched: state.searchedMovies,
+  };
+};
 
 export default connect(mapStateToProps)(App);

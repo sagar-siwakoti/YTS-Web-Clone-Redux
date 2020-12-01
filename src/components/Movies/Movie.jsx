@@ -4,7 +4,7 @@ import { star } from "../../assets/images";
 import movieImg from "../../assets/theOldGuard.jpg";
 import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import { getSingleMovie as action } from "../../store/actions/getSingleMovie";
 
 function Movie(props) {

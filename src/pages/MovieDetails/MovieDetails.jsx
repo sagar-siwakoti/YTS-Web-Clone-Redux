@@ -5,24 +5,17 @@ import { heart, imdb, star } from "../../assets/images";
 import Loader from "../../components/Extra UI/Loader/Loader";
 import Button from "@material-ui/core/Button";
 import MovieSecondarys from "../../components/Movies/MovieExtras/MovieSecondarys";
+import {getSingleMovie as singleMovies} from "../../store/actions/getSingleMovie";
 
-class MovieDetails extends React.Component{
-render() {
-
-  const clickedOnMovie = (url) => {
-    window.location.href = url;
-  };
-  //scroll to top
-  window.scrollTo(0, 0);
-  let movie = this.props.selectedMovie.currentMovie;
+function MovieDetails(props) {
+  let movie = props.selectedMovie.currentMovie;
   let displayMovieDetails = (
     <div className="Loader">
       <Loader />
     </div>
   );
-  if (!this.props.selectedMovie.loading && movie !== null) {
-    // list of genre of selected movie
 
+  if (!props.selectedMovie.loading && movie !== null) {
     let genres = movie?.genres;
 
     genres = genres.map((item) => {
@@ -30,14 +23,14 @@ render() {
     });
 
     displayMovieDetails = (
-
-        <div className="movieDetails__container">
-          <div className="movieDetails__image">
+      <>
+        <div className="movieResult__container">
+          <div className="movieResult__image">
             <MovieSecondarys img={movie.large_cover_image} />
             <Button>Download</Button>
           </div>
 
-          <div className="movieDetails__details">
+          <div className="movieResult__details">
             <h1>{movie.title}</h1>
 
             <h3>
@@ -45,28 +38,29 @@ render() {
               {genres}
             </h3>
 
-            <div className="movieDetails__availability">
+            <div className="movieResult__availability">
               <p>Available in:</p>
-              <div className="movieDetails__availabilityContainer">720p</div>
+              <div className="movieResult__availabilityContainer">720p</div>
             </div>
-            {/* likes */}
-            <div className="movieDetails__likes">
+
+            <div className="movieResult__likes">
               <img src={heart} alt="heart" />
               <h3>3</h3>
               <img src={imdb} alt="imdb" />
-              <h3 className="movieDetails__star">
+              <h3 className="movieResult__star">
                 <span>6.6</span>
                 <img src={star} alt="star" />
               </h3>
             </div>
           </div>
         </div>
-
+      </>
     );
   }
+
   return (
     <div
-      className="movieDetails"
+      className="movieResult"
       style={{
         backgroundImage: `linear-gradient(to bottom,rgba(43, 40, 40, 0.822), rgba(36, 29, 29, 0.897)),url(${movie?.background_image})`,
       }}
@@ -74,7 +68,6 @@ render() {
       {displayMovieDetails}
     </div>
   );
-}
 }
 
 const mapStateToProps = (state) => {
