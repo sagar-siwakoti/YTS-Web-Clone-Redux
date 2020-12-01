@@ -3,24 +3,26 @@
   grid-template-columns: 1fr 1.5fr 1fr;
   grid-column-gap: 8rem;
   padding: 4rem 9rem;
-  /* background-image: linear-gradient(to bottom,
-        rgba(43, 40, 40, 0.822),
-        rgba(36, 29, 29, 0.897)),
-        url(../../assets/images/hero.jpg); */
-  /* filter: blur(10px); */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   justify-items: start;
+
 }
 
 .movieDetails__container > div {
-  /* background-color: coral; */
-  height: 40rem;
-  width: 100%;
+  height: 410px;
+  width: 80%;
 }
-.movieDetails__image button {
+.movieDetails__image>.MuiButton-root {
   width: 100%;
   margin-top: 1rem;
+  position: static;
+  font-size: 1.1em;
+background: #6ac045;
+  color: white;
+  font-weight: bolder;
+  text-transform: initial;
+  font-style: normal;
 }
 
 .movieDetails__image div {
