@@ -9,6 +9,8 @@
   <img src="https://img.shields.io/badge/Language-JavaScript-f0db4f.svg" />
     <img src="https://img.shields.io/badge/State_Management-REDUX-orange.svg" />
   <img src="https://img.shields.io/badge/BackEnd-Firebase-brightgreen.svg" />
+    <img src="https://img.shields.io/badge/APIs-YTS_APIs-61dbfb.svg" />
     <img src="https://img.shields.io/badge/Hosting-Firebase_Hosting-black.svg" />
-
+<p><b>Check out Live DEMO=></b> <a href="https://yts-web-clone.web.app/">HERE</a></p>
+<h3>App preview:</h3>
 </p>
