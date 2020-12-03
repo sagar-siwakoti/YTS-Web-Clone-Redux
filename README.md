@@ -1,6 +1,6 @@
 ## YTS-Web-CLone
 <h3>Description:</h3>
-<p>Cone of YTS (A movie downloding site) Web version using reactJS and API provided by YTS-APIs.</p><br/>
+<p>Cone of YTS (A movie downloding site) Web version using reactJS, Redux JS and API provided by YTS-APIs.</p><br/>
 <p>
     <img src="https://img.shields.io/badge/Platform-Web-brightgreen.svg" />
   <img src="https://img.shields.io/badge/Application-YTS_Web-green.svg" />
